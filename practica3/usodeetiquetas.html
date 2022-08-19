@@ -11,13 +11,25 @@
 <body>
     <!-- se puede definir el estilo a ciertas etiquetas desde el principio de la siguiente manera: -->
     <style>
-        h3 {
-        color:mediumblue;
-        font-style:italic;
-        font-size:xx-large;
+        .boton {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        li>h3 {
+            font-style:italic;
+            font-size:xx-large;
+            color:mediumblue;
         }
 
-        li {list-style:decimal
+        li {
+            list-style:decimal;
         }
     </style>
     <h1 style="color :dodgerblue"> COMPORTAMIENTO DE ETIQUETAS </h1>
@@ -70,7 +82,7 @@
             <a href="example/article.html"> ejemplo de article </a>
 
         <li style="list-style:decimal"> <h3> etiqueta &lt; aside &gt; </h3></li>
-            <p> Define algún contenido además del contenido en el que se coloca. El contenido aparte debe estar
+            <p> Define algún contenido además del contenido en el que se coloca. El contenido aparte debe estar <br>
             indirectamente relacionado con el contenido circulante.<br>
             <strong>Sugerencia:</strong> &lt; aside &gt; se coloca a menudo como una barra lateral en un documento.<br>
             Nota:Este elemento no se muestra como algo especial en el navegador. Sin embargo, puede usar CSS para<br>
@@ -87,6 +99,7 @@
 
             <audio controls><source src="audio/teclado-mecanografia.mp3" type="audio/mpeg"> esto es un audio </audio>
 
+
         <li style="list-style:decimal"> <h3> etiqueta &lt; button &gt; </h3></li>
             <p> Define un botón en el que es puede hacer clic.<br>
             Dentro de un &lt; button &gt; puedes poner texto (con etiquteas como &lt; i &gt;, &lt; b &gt;, &lt; strong &gt;, <br>
@@ -97,8 +110,8 @@
             <strong>Consejo: Puede diseñar botones facilmente con CSS</strong> <br> Ejemplo:
             </p>
 
-            <button style="background-color:#4caf50"> boton 1 </button>
-            <button style="background-color:#008cba"> boton 2 </button>
+            <button onclick="miFuncion()" class="boton" style="background-color:#4caf50">boton</button>
+            <button class="boton" style="background-color:#008cba">boton</button>
 
         <li style="list-style:decimal"> <h3> etiqueta &lt; form &gt; </h3></li>
             <p>Es un contenedor para diferentes tipo de elementos de entrada, como: campos de texto, casillas de <br>
@@ -106,21 +119,25 @@
             </p>
             <ul>
                 <li style="list-style:circle;"> &lt;input type="text"&gt;</li>
+                <input type="text">
                 <h4>Mustra un campo de entrada de texto de una solo linea</h4>
                 <li style="list-style:circle;"> &lt;input type="radio"&gt;</li>
+                <input type="radio" name="grado">1
+                <input type="radio" name="grado">2
+                <input type="radio" name="grado">3
                 <h4>Muestra un botón de radio(para selecionar una de muchas opciones)</h4>
                 <li style="list-style: circle;"> &lt;input type="checkbox"&gt;</li>
+                <input type="checkbox">
+                <input type="checkbox">
                 <h4>Muestra una casilla de verificación (para selecionar cero o más opciónes)</h4>
                 <li style="list-style: circle;"> &lt;input type="submit"&gt;</li>
+                <input type="submit">
                 <h4>Muestra un botón de envio(para enviar el formulario)</h4>
                 <li style="list-style: circle;"> &lt;input type="button"&gt;</li>
+                <input type="button">
                 <h4>Muestra un botón en el que se puede hacer clic</h4>
             </ul>
-            <p> Ejemplo:
-            </p>
-
-            <a href="example/form.html"> ejemplo de form </a>
-            
+     
         <li style="list-style:decimal"> <h3> etiqueta &lt; footer &gt; </h3></li>
             <p>Define un pie de página para un documento o sección <br>
             Normalmente contiene:
@@ -146,7 +163,7 @@
             <li style="list-style:circle">Logotipo o icono</li>
             <li style="list-style:circle">información de autoría</li>
             <p> <strong>NOTA:</strong> Puede tener varios &lt; header &gt; en un documento HTML. Sin embargo, <br>
-            no se pueden colocar dentro de un &lt; footer &gt;, &lt; adress &gt;u otro &lt; header &gt; <br> 
+            no se pueden colocar dentro de un &lt; footer &gt;, &lt; adress &gt; u otro &lt; header &gt; <br> 
             ejemplo:
             </p>
         </ul>
@@ -175,11 +192,11 @@
             <h4> hola mundo </h4>
             <h5> hola mundo </h5>
             <h6> hola mundo </h6>
-
+        
         <li style="list-style:decimal"> <h3> etiqueta &lt; img &gt; </h3></li>
-            <p>Se utiliza para incrustar una imagen en una página HTML. 
-            Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas
-            web. La etiqueta &lt; ima &gt;crea un espacio de espera para la imagen de referencia.
+            <p>Se utiliza para incrustar una imagen en una página HTML. <br>
+            Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas <br>
+            web. La etiqueta &lt; ima &gt;crea un espacio de espera para la imagen de referencia. <br>
             Tiene atributos obligatorios: </p>
             <ul>
                 <li style="list-style:circle">src: especifica la ruta a la imagen</li>
@@ -204,6 +221,12 @@
             elemento está destinado solo para el bloque principal de enlaces de navegación. <br> ejemplo:
             </p>
 
+            <nav>
+                <input type="text" placeholder="buscar">
+                <a href="https://www.youtube.com/">youtube</a>
+                <a href="https://www.google.com.mx/?hl=es-419">google</a>
+            </nav>
+
         <li style="list-style:decimal"> <h3> etiqueta &lt; p &gt; </h3></li>
             <p>Define un párrafo. <br>
                 Los navegadores agregan automáticamente una línea en blanco antes y después de cada &lt; p &gt;</p>
@@ -212,11 +235,10 @@
 
         <li style="list-style:decimal"> <h3> etiqueta &lt; scrypt &gt; </h3></li>
             <p>Se utiliza para incrustar un script del lado del cliente JavaScript. <br>
-            Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos
-            externos a través del atributo src
-            Los usos comunes de JavaScript son manipulación de imágenes, la validación de formularios y los
-            cambios dinámicos de contenido. 
-            <strong>Nota:</strong> Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la
+            Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos externos a través del <br> 
+            atributo src Los usos comunes de JavaScript son manipulación de imágenes, la validación de formularios y los <br>
+            cambios dinámicos de contenido. <br>
+            <strong>Nota:</strong> Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la <br>
             información de la hoja de estilo. Si se han definido algunas propiedades para el mismo selector <br>
             (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída <br>
             (consulte el ejemplo a continuación).
@@ -226,8 +248,7 @@
 
         <li style="list-style:decimal"> <h3> etiqueta &lt; style &gt; </h3></li>
             <p>Se utiliza para definir la información de estilo CSS de un documento <br> 
-            Dentro de &lt; style &gt;, especifica cómo deben mostrarse los elementos HTML en un navegador. <br>
-            Ejemplo
+            Dentro de &lt; style &gt;, especifica cómo deben mostrarse los elementos HTML en un navegador.
             </p>
 
         <li style="list-style:decimal"> <h3> etiqueta &lt; section &gt; </h3></li>
@@ -235,6 +256,16 @@
             </p>
 
             <a href="example/section.html"> ejemplo de &lt; section &gt;</a>
+
+        <li style="list-style:decimal"> <h3> tipos de diferenciado </h3></li>
+
+            <p> Para poner estilos a ciertas etiquetas se pueden aplicar por:
+                <ul>
+                    <li> class: (."nombre") Tu puedes darle un nombre a una o varias etiquetas por algun nombre </li>
+                    <li> tag: ("nombre de etiqueta") Son las palabras reservadas a las etiquetas y actua sobre toda las etiquetas con ese nombre</li>
+                    <li> id: (#"nombre") Son nombres para comandos (como los comandos en scrypts) </li>
+                </ul>
+            </p>
 
     </ul>
 </body>
