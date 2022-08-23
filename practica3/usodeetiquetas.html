@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="boton" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <style>
         .boton {
             border: none;
-            color: white;
+            color: rgb(55, 45, 157);
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
@@ -22,21 +22,28 @@
             margin: 4px 2px;
             cursor: pointer;
         }
-        li>h3 {
+        li h3 {
             font-style:italic;
             font-size:xx-large;
             color:mediumblue;
+        }
+       /* para los elemnetos en especifico hay que definir la ruta de identacion del elemento que quieres cmabiar
+       como en el sigiente ejemplo */
+        li h3 {
+            color: chartreuse;
+        }
+        ul li {
+            color: #4caf50;
         }
 
         li {
             list-style:decimal;
         }
     </style>
-    <h1 style="color :dodgerblue"> COMPORTAMIENTO DE ETIQUETAS </h1>
+    <h1 class="boton" style="color :dodgerblue"> COMPORTAMIENTO DE ETIQUETAS </h1>
     <ul> <!-- ul se usa para enlistar elementos en la pagina -->
-        <li style="list-style:decimal"> <h3> Etiqueta  &lt; a &gt;  </h3></li> <!-- li se usa para darle atributo 
-            a elementos en una lista-->
-            <p> 
+        <li style="list-style:decimal"> <h3> Etiqueta  &lt; a &gt;  </h3></li> <!-- li se usa para darle atributo a elementos en una lista-->
+            <p class="ul li"> 
             Se usa para anclar un url, tambien conocido como "LINK", en nuestra pagina. <br>
             Abrimos la etiqueta con el atributo HREF=" ", escribiendo el url dentro de las comillas, <br>
             despues escribimos alguna descripcion sobre el link anotado para que aparezca de esta forma y <br>
@@ -137,7 +144,7 @@
                 <input type="button">
                 <h4>Muestra un botón en el que se puede hacer clic</h4>
             </ul>
-     
+
         <li style="list-style:decimal"> <h3> etiqueta &lt; footer &gt; </h3></li>
             <p>Define un pie de página para un documento o sección <br>
             Normalmente contiene:
@@ -178,9 +185,10 @@
             <p>Generalmente se usa para agrupar un conjunto d euno o más elementos &lt; h1 &gt; a &lt; h6 &gt;, para agrupar, <br>
             por ejemplo, un titulo de sección y un subtitulo adjunto. <br> ejemplo:
             </p>
-
-                <h2> ESCUELA DE CODIGO </h2>
-                <H4> EL COMIENZO... </H4>
+                <hgroup>
+                    <h2> ESCUELA DE CODIGO </h2>
+                    <H4> EL COMIENZO... </H4>
+                </hgroup>
 
         <li style="list-style:decimal"> <h3> etiqueta &lt; h1 &gt; a &lt; h6 &gt; </h3></li>
             <p>Se utilizan para definir encabezados HTML. <br>
@@ -261,12 +269,11 @@
 
             <p> Para poner estilos a ciertas etiquetas se pueden aplicar por:
                 <ul>
+                </p>
                     <li> class: (."nombre") Tu puedes darle un nombre a una o varias etiquetas por algun nombre </li>
                     <li> tag: ("nombre de etiqueta") Son las palabras reservadas a las etiquetas y actua sobre toda las etiquetas con ese nombre</li>
                     <li> id: (#"nombre") Son nombres para comandos (como los comandos en scrypts) </li>
                 </ul>
-            </p>
-
     </ul>
 </body>
 
