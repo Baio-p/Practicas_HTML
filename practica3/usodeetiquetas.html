@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="boton" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +8,12 @@
     <title> USO DE ETIQUETAS </title>
 </head>
 
-<body>
+<body style="background-color:black ;">
     <!-- se puede definir el estilo a ciertas etiquetas desde el principio de la siguiente manera: -->
     <style>
+        p, h1, h2, h3, h4, h5, h6, a, abbr {
+            color:white
+        }
         .boton {
             border: none;
             color: rgb(55, 45, 157);
@@ -40,7 +43,9 @@
             list-style:decimal;
         }
     </style>
-    <h1 class="boton" style="color :dodgerblue"> COMPORTAMIENTO DE ETIQUETAS </h1>
+    <header>
+        <h1 style="color: dodgerblue; font-size: 300%; text-align: center;"> COMPORTAMIENTO DE ETIQUETAS </h1>
+    </header>
     <ul> <!-- ul se usa para enlistar elementos en la pagina -->
         <li style="list-style:decimal"> <h3> Etiqueta  &lt; a &gt;  </h3></li> <!-- li se usa para darle atributo a elementos en una lista-->
             <p class="ul li"> 
@@ -68,7 +73,7 @@
             Ejemplo:
             </p>
 
-            <address> escrito por <a href="https://www.youtube.com/watch?v=u8uup17RrUU"> Benja </a> </address>
+            <address style="color:white ;"> escrito por <a href="https://www.youtube.com/watch?v=u8uup17RrUU"> Benja </a> </address>
 
         <li style="list-style:decimal"> <h3> etiqueta &lt; article &gt; </h3></li>
             <p> Un artículo debe tener sentido por sí mismo y debe ser posible distribuirlo independientemente del resto <br>
@@ -111,8 +116,8 @@
             <p> Define un botón en el que es puede hacer clic.<br>
             Dentro de un &lt; button &gt; puedes poner texto (con etiquteas como &lt; i &gt;, &lt; b &gt;, &lt; strong &gt;, <br>
             &lt; img &gt;, etc ) pero no es <br>
-            posible con un botón creado con la etiqueta  &lt; input &gt;. <br>
-            <strong>Sugerencia: Especifique siembre el type de un &lt; button &gt;, para indicar a los navegadores <br>
+            posible tener un botón creado con la etiqueta  &lt; input &gt;. <br>
+            <strong>Sugerencia: Especifique siempre el type de un &lt; button &gt;, para indicar a los navegadores <br>
             qué tipo de botón es </strong>.<br>
             <strong>Consejo: Puede diseñar botones facilmente con CSS</strong> <br> Ejemplo:
             </p>
