@@ -1,0 +1,5 @@
+.elemento {
+    text-align: center;
+    display: grid;
+    place-content: center;
+    }
