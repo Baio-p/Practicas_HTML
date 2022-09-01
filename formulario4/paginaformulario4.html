@@ -8,21 +8,27 @@
 </head>
 <body>
     <style>
+        .fondo {
+            position: absolute;
+            z-index: -1;
+            width: 105%;
+            margin-left: -10px;
+        }
         header {
             border: 1px;
-            border-style: solid;
+            border-bottom: solid 0.5px;
             border-color: cadetblue;
-            width: 100%;
-        }
-        header img {
-            margin-left: 10vw;
+            width: 101%;
+            margin-left: -10px;
+            margin-right: -40px;
             margin-top: 1vw;
-            margin-bottom: 1vw;
+            padding-left: 250px;
         }
         nav {
             display: flex;
             justify-content: right;
-            margin-right: 15vw;
+            padding-right: 15vw;
+            padding-top: 1px;
         }
         a {
             margin: 15px;
@@ -31,16 +37,45 @@
         a:visited {
             color: cadetblue;
         }
+        section div {
+            display: grid;
+        }
+        section img {
+            margin-left: 10px;
+        }
+        H1 {
+            color: white;
+        }
+        .flx {
+            display: flex;
+        }
     </style>
-    <header>
-        <img src="img/logo.svg" alt="Gobierno de la Ciudad de México">
-    </header>
-    <nav>
-        <a href="">Residentes</a>
-        <a href="">Negocios</a>
-        <a href="">Visitantes</a>
-        <a href="">Gobierno</a>
-    </nav>
-    <img src="img/fondocdmx.jpg" alt="Gobierno de la Ciudad de México">
+    <div>
+        <header>
+            <img src="img/logo.svg" alt="Gobierno de la Ciudad de México">
+        </header>
+        <nav>
+            <a href="">Residentes</a>
+            <a href="">Negocios</a>
+            <a href="">Visitantes</a>
+            <a href="">Gobierno</a>
+        </nav>
+    </div>
+    <section style="display: flex;">
+        <img class="fondo" src="img/fondocdmx.jpg" alt="">
+        <div class="flx">
+            <img src="img/hero-vector.svg" alt="">
+            <hgroup>
+                <h1>APRENDE A PROGRAMAR</h1>
+                <div class="flx">
+                    <H1>EN LAS</H1>
+                    <div>
+                        <h1>ESCUELAS DE CODIGO</h1>
+                        <H1>DE LA CDMX</H1>
+                    </div>
+                </div> 
+                </hgroup>
+        </div>
+    </section>
 </body>
 </html>
