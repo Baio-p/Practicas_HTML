@@ -8,12 +8,6 @@
 </head>
 <body>
     <style>
-        .fondo {
-            position: absolute;
-            z-index: -1;
-            width: 105%;
-            margin-left: -10px;
-        }
         header {
             border: 1px;
             border-bottom: solid 0.5px;
@@ -37,17 +31,48 @@
         a:visited {
             color: cadetblue;
         }
-        section div {
-            display: grid;
+        .fondo {
+            position: absolute;
+            z-index: -1;
+            width: 105%;
+            margin-left: -10px;
         }
-        section img {
+        .vector {
             margin-left: 10px;
-        }
-        H1 {
-            color: white;
         }
         .flx {
             display: flex;
+        }
+        .grider {
+            display: grid;
+            grid-column: auto,auto,auto;
+            color: white;
+            padding: 20px;
+            font-size: 30px; 
+        } /* el display grid hace un contenedor en forma de rejilla con el que se puede manipular el tamaño y la posicion de los elementos*/
+        .elmt1 {
+            font-family:"liberation sans";
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            font-size:40px;
+        }/* se usan las columnas en vertical con grid-COLUMN para indicar el tamaño en HORIZONTAL de el elemento*/
+        .elmt2 { 
+            grid-column-start: 1 ;
+            grid-row-start: 2 ; 
+            text-align: right;
+        }/* se usan las columnas en horizontal con grid-ROW para indicar el tamaño en VERTICAL de el elemento*/
+        .elmt3 {
+            font-family: "sans-serif";
+            grid-column: 2 / 3;
+            grid-row-start: 2 ;
+            grid-row-end: 2;
+            font-size:50px;
+            font-weight:bold;
+        }/*solo con grid column o grid row se puede definir el tamaño del item de principio a fin con el formato 0 / 0*/
+        .elmt4 {
+            grid-column-start: 2;
+            grid-row-start: 3 ;
         }
     </style>
     <div>
@@ -61,20 +86,16 @@
             <a href="">Gobierno</a>
         </nav>
     </div>
-    <section style="display: flex;">
+    <section class="flx">
         <img class="fondo" src="img/fondocdmx.jpg" alt="">
         <div class="flx">
-            <img src="img/hero-vector.svg" alt="">
-            <hgroup>
-                <h1>APRENDE A PROGRAMAR</h1>
-                <div class="flx">
-                    <H1>EN LAS</H1>
-                    <div>
-                        <h1>ESCUELAS DE CODIGO</h1>
-                        <H1>DE LA CDMX</H1>
-                    </div>
-                </div> 
-                </hgroup>
+            <img class="vector" src="img/hero-vector.svg" alt="">
+            <div class="grider">
+                <span class="elmt1">APRENDE A PROGRAMAR</span>
+                <span class="elmt2">EN LAS</span>
+                <span class="elmt3">ESCUELAS DE <br> CÓDIGO</span>
+                <span class="elmt4">DE LA CDMX</span>
+            </div>
         </div>
     </section>
 </body>
