@@ -8,7 +8,7 @@
 </head>
 <body>
     <style>
-        header {
+        .cabeza {
             border: 1px;
             border-bottom: solid 0.5px;
             border-color: cadetblue;
@@ -38,45 +38,57 @@
             margin-left: -10px;
         }
         .vector {
-            margin-left: 10px;
+            background-color: chartreuse;
         }
         .flx {
             display: flex;
         }
+        .letrero {
+            display: flex;
+            padding-top: 20px;
+            justify-content: center;
+        }
         .grider {
+            width: 70%;
+            background-color: blue;
             display: grid;
+            gap: 10px;
             grid-column: auto,auto,auto;
             color: white;
-            padding: 20px;
             font-size: 30px; 
         } /* el display grid hace un contenedor en forma de rejilla con el que se puede manipular el tamaño y la posicion de los elementos*/
         .elmt1 {
+            background-color: aqua;
             font-family:"liberation sans";
             grid-column-start: 1;
             grid-column-end: 3;
             grid-row-start: 1;
+            font-weight: bold;
             font-size:40px;
         }/* se usan las columnas en vertical con grid-COLUMN para indicar el tamaño en HORIZONTAL de el elemento*/
         .elmt2 { 
+            background-color: aqua;
             grid-column-start: 1 ;
             grid-row-start: 2 ; 
             text-align: right;
         }/* se usan las columnas en horizontal con grid-ROW para indicar el tamaño en VERTICAL de el elemento*/
         .elmt3 {
+            background-color: aqua;
             font-family: "sans-serif";
             grid-column: 2 / 3;
             grid-row-start: 2 ;
             grid-row-end: 2;
-            font-size:50px;
+            font-size:70px;
             font-weight:bold;
         }/*solo con grid column o grid row se puede definir el tamaño del item de principio a fin con el formato 0 / 0*/
         .elmt4 {
+            background-color: aqua;
             grid-column-start: 2;
             grid-row-start: 3 ;
         }
     </style>
     <div>
-        <header>
+        <header class="cabeza">
             <img src="img/logo.svg" alt="Gobierno de la Ciudad de México">
         </header>
         <nav>
@@ -86,14 +98,14 @@
             <a href="">Gobierno</a>
         </nav>
     </div>
-    <section class="flx">
-        <img class="fondo" src="img/fondocdmx.jpg" alt="">
-        <div class="flx">
+    <img class="fondo" src="img/fondocdmx.jpg" alt="">
+    <section>
+        <div class="letrero">
             <img class="vector" src="img/hero-vector.svg" alt="">
             <div class="grider">
                 <span class="elmt1">APRENDE A PROGRAMAR</span>
                 <span class="elmt2">EN LAS</span>
-                <span class="elmt3">ESCUELAS DE <br> CÓDIGO</span>
+                <span class="elmt3">ESCUELAS <br> DE CÓDIGO</span>
                 <span class="elmt4">DE LA CDMX</span>
             </div>
         </div>
