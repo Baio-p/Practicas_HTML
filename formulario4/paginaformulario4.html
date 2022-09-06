@@ -4,88 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    <style>
-        .cabeza {
-            border: 1px;
-            border-bottom: solid 0.5px;
-            border-color: cadetblue;
-            width: 101%;
-            margin-left: -10px;
-            margin-right: -40px;
-            margin-top: 1vw;
-            padding-left: 250px;
-        }
-        nav {
-            display: flex;
-            justify-content: right;
-            padding-right: 15vw;
-            padding-top: 1px;
-        }
-        a {
-            margin: 15px;
-            text-decoration: none;
-        }
-        a:visited {
-            color: cadetblue;
-        }
-        .fondo {
-            position: absolute;
-            z-index: -1;
-            width: 105%;
-            margin-left: -10px;
-        }
-        .flx {
-            display: flex;
-        }
-        .letrero {
-            margin-top: 25px;
-            display: flex;
-            padding-top: 20px;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .vector {
-            width: 30px;
-            margin-top: 0px;
-        }
-        .grider {
-            width: 70%;
-            display: grid;
-            grid-column: auto,auto,auto;
-            color: white;
-            font-size: 40px; 
-        } /* el display grid hace un contenedor en forma de rejilla con el que se puede manipular el tamaño y la posicion de los elementos*/
-        .elmt1 {
-            font-family:"liberation sans";
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            font-weight: bold;
-            font-size:40px;
-        }/* se usan las columnas en vertical con grid-COLUMN para indicar el tamaño en HORIZONTAL de el elemento*/
-        .elmt2 { 
-            grid-column-start: 1 ;
-            grid-row-start: 2 ; 
-            text-align: right;
-            padding-top: 6px;
-        }/* se usan las columnas en horizontal con grid-ROW para indicar el tamaño en VERTICAL de el elemento*/
-        .elmt3 {
-            text-align: left;
-            font-family: "sans-serif";
-            grid-column: 2 / 3;
-            grid-row-start: 2 ;
-            grid-row-end: 2;
-            font-size:70px;
-            font-weight:bold;
-        }/*solo con grid column o grid row se puede definir el tamaño del item de principio a fin con el formato 0 / 0*/
-        .elmt4 {
-            grid-column-start: 2;
-            grid-row-start: 3 ;
-        }
-    </style>
     <div>
         <header class="cabeza">
             <img src="img/logo.svg" alt="Gobierno de la Ciudad de México">
@@ -98,7 +20,7 @@
         </nav>
     </div>
     <img class="fondo" src="img/fondocdmx.jpg" alt="">
-    <section>
+    <section class="psletrero">
         <div class="letrero">
             <img class="vector" src="img/hero-vector.svg" alt="">
             <div class="grider">
@@ -110,4 +32,11 @@
         </div>
     </section>
 </body>
+<footer class="pdP">
+    <h1>¿Quien se puede inscribir?</h1>
+    <p>
+        <strong> Cualquier persona que quiera aprender a programar código y cuente con 4-8 horas disponibles a la semana. </strong>  <br>
+        *Menores de edad deberán entrar en las instalaciones acompañados de un adulto.*
+    </p>
+</footer>
 </html>

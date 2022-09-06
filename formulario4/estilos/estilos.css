@@ -1,0 +1,92 @@
+.cabeza {
+    border: 1px;
+    border-bottom: solid 0.5px;
+    border-color: cadetblue;
+    width: 101%;/*tamaño del 100% para que abarque todo el ancho de la pagina*/
+    margin-left: -10px;
+    margin-right: -40px; /*margin negativo para que salga del ancho de la pagina y se vea sin bordes*/
+    margin-top: 1vw;
+    padding-left: 250px;
+}
+nav {
+    display: flex; /*flex separa los elementos del contenedor en secciones verticales*/
+    justify-content: right;
+    padding-right: 15vw;
+    padding-top: 1px;
+}
+a {
+    margin: 15px;
+    text-decoration: none; /*cambia el decorado de las letras en los enlaces*/
+}
+a:visited {
+    color: cadetblue; 
+} /*cambia el color de la etiqueta <a> */
+.fondo {
+    position: absolute; /*para fijar el elemento*/
+    z-index: -1; /*para manejar los elementos en capas*/
+    width: 105%;
+    margin-left: -10px;
+}
+.flx {
+    display: flex;
+}
+.psletrero {
+    padding: 40px;
+}
+.letrero {
+    margin-top: 25px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: flex-start; /*para alinear los elementos de un contenedor al margen superior */
+}
+.vector {
+    width: 50px;
+    margin-top: 10px;
+}
+.grider {
+    width: 60%;
+    display: grid;  /* el display grid hace un contenedor en forma de rejilla con el que se puede manipular el tamaño y la posicion de los elementos por columnas y filas*/
+    grid-column: auto,auto,auto; /*tamaño de los huecos en las rejillas*/
+    color: white; 
+}
+.elmt1 {
+    font-family:"liberation sans";
+    grid-column-start: 1;/* se usan las columnas en vertical con grid-COLUMN para indicar el tamaño en HORIZONTAL de el elemento*/
+    grid-column-end: 3;
+    grid-row-start: 1;
+    font-weight: bold;
+    font-size: 50px;
+}
+.elmt2 { 
+    grid-column-start: 1 ;
+    grid-row-start: 2 ; /* se usan las columnas en horizontal con grid-ROW para indicar el tamaño en VERTICAL de el elemento*/
+    text-align: right;
+    padding-top: 12px;
+    font-size: 40px;
+}
+.elmt3 {
+    text-align: left;
+    font-family: "sans-serif";
+    grid-column: 2 / 3;
+    grid-row-start: 2 ;
+    grid-row-end: 2;
+    font-weight:bold;
+    font-size: 90px;
+}/*solo con grid column o grid row se puede definir el tamaño del item de principio a fin con el formato 0 / 0*/
+.elmt4 {
+    grid-column-start: 2;
+    grid-row-start: 3 ;
+    font-size: 30px;
+}
+.pdP {
+    text-align: center;
+    margin: 140px;
+    font-size: 20px;
+}
+footer h1 {
+    color: rgb(183, 141, 33);
+}
+footer p {
+    color: rgb(54, 120, 42);
+}
