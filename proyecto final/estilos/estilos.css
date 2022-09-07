@@ -1,0 +1,51 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-left: 15px;
+}
+nav a {
+    padding-left: 30px;
+}
+nav img {
+    padding-left: 10px;
+}
+nav button {
+    margin-right: 20px;
+}
+button {
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section>div {
+    padding: 4vw;
+}
+.texto1 {
+    color: white;
+    text-align: center;
+    font-size: 2vw;  
+    background-color: rgb(25, 139, 25);
+    margin: 6vw;
+    padding: 4vw;
+}
+.texto2 {
+    display: flex;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    background-color: red;
+    margin: 6vw;
+    padding: 4vw;
+}
+.texto3 {
+    display: flex;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    background-color: red;
+    margin: 6vw;
+    padding: 4vw;
+}

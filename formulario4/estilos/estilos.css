@@ -24,7 +24,8 @@ a:visited {
 .fondo {
     position: absolute; /*para fijar el elemento*/
     z-index: -1; /*para manejar los elementos en capas*/
-    width: 105%;
+    width: 120%;
+    object-fit: cover;
     margin-left: -10px;
 }
 .flx {
@@ -81,7 +82,7 @@ a:visited {
 }
 .pdP {
     text-align: center;
-    margin: 140px;
+    margin: 8vw;
     font-size: 20px;
 }
 footer h1 {
