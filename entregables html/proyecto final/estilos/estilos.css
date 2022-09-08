@@ -1,51 +1,62 @@
-.nav{
+.head{
     display: flex;
     justify-content: space-between;
     text-align: left;
+    padding: 15px;
+    margin: 10px;
+}
+header a {
+    text-decoration: none;
+    font-weight: bold;
     padding-left: 15px;
-}
-nav a {
-    padding-left: 30px;
-}
-nav img {
-    padding-left: 10px;
-}
-nav button {
-    margin-right: 20px;
 }
 button {
-    border-radius: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    justify-content: right;
+    border-radius: 50px;
+    background-color: transparent;
+    border: solid 2px;
+    padding: 7px;
 }
-section>div {
-    padding: 4vw;
-}
-.texto1 {
+button:hover {
+    background-color: black;
     color: white;
-    text-align: center;
-    font-size: 2vw;  
-    background-color: rgb(25, 139, 25);
-    margin: 6vw;
-    padding: 4vw;
 }
-.texto2 {
+section {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.sec1 {
+    background-color: forestgreen;
     display: flex;
-    color: white;
-    text-align: center;
-    font-size: 2vw;
-    background-color: red;
-    margin: 6vw;
-    padding: 4vw;
+    padding: 60px;
 }
-.texto3 {
-    display: flex;
+section a {
     color: white;
-    text-align: center;
-    font-size: 2vw;
+}
+.sec2y3 {
     background-color: red;
-    margin: 6vw;
-    padding: 4vw;
+    display: flex;
+}
+.pedido {
+    background-color: transparent;
+    color: white;
+}
+.pedido:hover {
+    background-color: white;
+    color:red;
+    font-weight: bold;
+}
+section img {
+    height: 100%;
+    width: 50%;
+}
+section div{
+    width: 50%;
+    justify-content: center;
 }
