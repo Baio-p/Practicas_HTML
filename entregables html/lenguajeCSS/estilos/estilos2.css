@@ -21,35 +21,26 @@ a {
 a:visited {
     color: cadetblue; 
 } /*cambia el color de la etiqueta <a> */
-.fondo {
-    position: absolute; /*para fijar el elemento*/
-    z-index: -1; /*para manejar los elementos en capas*/
-    width: 120%;
-    object-fit: cover;
-    margin-left: -10px;
-}
-.flx {
-    display: flex;
-}
-.psletrero {
-    padding: 40px;
-}
 .letrero {
-    margin-top: 25px;
-    display: flex;
-    padding-top: 20px;
+    display: flex; 
+    padding-top: 40px;
     justify-content: center;
-    align-items: flex-start; /*para alinear los elementos de un contenedor al margen superior */
+    align-items: flex-start;
+    background-image: url(../img/fondocdmx.jpg);
+    background-size: 100% 100%;
 }
 .vector {
     width: 50px;
-    margin-top: 10px;
+    justify-items: right;
 }
 .grider {
     width: 60%;
+    padding-bottom: 40px;
+    /*justify-content: center;*/
     display: grid;  /* el display grid hace un contenedor en forma de rejilla con el que se puede manipular el tamaño y la posicion de los elementos por columnas y filas*/
     grid-column: auto,auto,auto; /*tamaño de los huecos en las rejillas*/
-    color: white; 
+    color: white;
+    align-items: flex-start;
 }
 .elmt1 {
     font-family:"liberation sans";
@@ -57,7 +48,7 @@ a:visited {
     grid-column-end: 3;
     grid-row-start: 1;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 }
 .elmt2 { 
     grid-column-start: 1 ;
@@ -82,7 +73,7 @@ a:visited {
 }
 .pdP {
     text-align: center;
-    margin: 8vw;
+    margin: 15px;
     font-size: 20px;
 }
 footer h1 {
