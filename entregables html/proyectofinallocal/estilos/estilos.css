@@ -1,0 +1,82 @@
+.head {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 15px;
+    margin: 20px;
+    font-size: 20px
+}
+.logo-home {
+    max-width: 30px;
+    max-height: 30px;
+    align-items: center;
+}
+.separador {
+    display: flex;
+}
+.links-izquierda {
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+button {
+    border-radius: 50px;
+    background-color: transparent;
+    border: solid 2px;
+    padding: 10px;
+    font-size: 20px;
+}
+.boton-usuario:hover {
+    background-color: black;
+    color: white;
+}
+.ajus-gen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 4vw;
+}
+.sec1 {
+    background-color: forestgreen;
+    padding: 60px;
+}
+section a {
+    color: white;
+}
+.sec2y3 {
+    background-color: red;
+}
+.pedido {
+    margin-top: 75px;
+    background-color: transparent;
+    color: white;
+}
+.pedido:hover {
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}
+.alebrijes {
+    height: 100%;
+    width: 50%;
+    padding-top: 0px;
+}
+section div{
+    width: 50%;
+}
+footer {
+    padding: 10px;
+    border-top: 1px solid;
+    color: black;
+}
+.redes.sociales {
+    max-width: 30px;
+    max-height: 30px;
+}

@@ -1,48 +1,50 @@
-.head{
+.head {
     display: flex;
     justify-content: space-between;
     text-align: left;
     padding: 15px;
-    margin: 10px;
+    margin: 20px;
     font-size: 20px
 }
-nav {
+.logos {
+    max-width: 30px;
+    max-height: 30px;
     align-items: center;
 }
-header img {
-    max-width: 25px;
-    max-height: 25px;
+.separador {
+    display: flex;
 }
-header a {
+.links-izquierda {
     text-decoration: none;
     font-weight: bold;
     padding-left: 15px;
+    padding-top: 5px;
 }
 button {
-    justify-content: right;
     border-radius: 50px;
     background-color: transparent;
     border: solid 2px;
-    padding: 7px;
+    padding: 10px;
+    font-size: 20px;
 }
-button:hover {
+.boton-usuario:hover {
     background-color: black;
     color: white;
 }
-section {
+.ajus-gen {
+    display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    font-size: 30px;
+    text-align: center;
+    font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    margin-right: 90px;
-    margin-left: 90px;
-    margin-bottom: 50px;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 4vw;
 }
 .sec1 {
     background-color: forestgreen;
-    display: flex;
     padding: 60px;
 }
 section a {
@@ -50,21 +52,21 @@ section a {
 }
 .sec2y3 {
     background-color: red;
-    display: flex;
 }
 .pedido {
-    margin-top: 90px;
+    margin-top: 75px;
     background-color: transparent;
     color: white;
 }
 .pedido:hover {
-    background-color: white;
-    color:red;
+    background-color: red;
+    color:white;
     font-weight: bold;
 }
-section img {
+.alebrijes {
     height: 100%;
     width: 50%;
+    padding-top: 0px;
 }
 section div{
     width: 50%;
@@ -73,4 +75,8 @@ footer {
     padding: 10px;
     border-top: 1px solid;
     color: black;
+}
+.redes-sociales {
+    max-width: 30px;
+    max-height: 30px;
 }
